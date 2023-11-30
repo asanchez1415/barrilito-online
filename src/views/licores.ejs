@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Licores</title>
+    <%- include('partials/head') %>
+  </head>
+  <body>
+    <%- include('partials/navegador') %>
+    <main class="main-productos">
+      <div class="contenedor-producto">
+        <div class="producto">
+          <img class="producto-imagen" src="/imagenes/licor01.png" alt="" />
+          <div class="producto-detalles">
+            <h3 class="producto-titulo">Crema de licor Baileys</h3>
+            <h3 class="producto-subtitulo">Baileys</h3>
+            <p class="producto-precio">$58.000</p>
+            <button class="producto-agregar">Agregar</button>
+          </div>
+        </div>
+        <div class="producto">
+          <img class="producto-imagen" src="/imagenes/licor02.png" alt="" />
+          <div class="producto-detalles">
+            <h3 class="producto-titulo">Whisky Swing</h3>
+            <h3 class="producto-subtitulo">Johnnie Walker</h3>
+            <p class="producto-precio">$50.000</p>
+            <button class="producto-agregar">Agregar</button>
+          </div>
+        </div>
+        <div class="producto">
+          <img class="producto-imagen" src="/imagenes/licor03.png" alt="" />
+          <div class="producto-detalles">
+            <h3 class="producto-titulo">Ron Aniversario</h3>
+            <h3 class="producto-subtitulo">Pampero</h3>
+            <p class="producto-precio">$58.000</p>
+            <button class="producto-agregar">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('partials/footer') %>
+  </body>
+</html>

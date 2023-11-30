@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <%- include('partials/head') %>
+  </head>
+  <body>
+    <%- include('partials/navegador') %>
+    <section>
+      <div class="section-empresa">
+        <h1 class="content-empresa">Nuestra Empresa</h1>
+      </div>
+
+      <article class="section-empresa">
+        <div class="content-empresa">
+          <div class="text-empresa">
+            <p>
+              Nuestra distribuidora fue fundada en el año 1995 por Juan Pérez
+              Rodríguez junto a su hija María Pérez Martínez, bajo el nombre de
+              Pérez y familia S.A. Iniciamos adquiriendo una variedad de
+              productos de diferentes marcas y comercializándolos en tiendas
+              especializadas de Valparaíso.
+            </p>
+            <p>
+              Iniciamos nuestras operaciones alquilando dos locales de 150 m2 en
+              la avenida Bolívar para almacenar los productos y posteriormente
+              distribuirlos desde ese punto.
+            </p>
+            <p>
+              En la actualidad, nuestra empresa cuenta con una cartera de 4.200
+              clientes en el mercado tradicional.
+            </p>
+            <p>
+              En el año 2022, tomamos la decisión de lanzar nuestra primera
+              plataforma de comercio electrónico. A través de Compra Express,
+              buscamos llegar al consumidor final en toda la Región de
+              Valparaíso en menos de 48 horas hábiles.
+            </p>
+          </div>
+
+          <img
+            src="/imagenes/botilleria.jpg"
+            class="img-botilleria"
+            alt="Imagen de la botilleria"
+          />
+        </div>
+      </article>
+    </section>
+    <%- include('partials/footer') %>
+  </body>
+</html>
