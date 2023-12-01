@@ -9,7 +9,24 @@
   <body>
     <%- include('../partials/navegador') %>
 
-    <h1>Productos</h1>
+    <main class="main-productos">
+      <div class="contenedor-producto">
+        <% products.forEach((product) => { %>
+        <div class="producto">
+          <img
+            class="producto-imagen"
+            src="<%= `/imagenes/${product.image}` %>"
+            alt="" />
+          <div class="producto-detalles">
+            <h3 class="producto-titulo"><%= product.name %></h3>
+            <h3 class="producto-subtitulo"><%= product.brand %></h3>
+            <p class="producto-precio">$ <%= product.price %></p>
+            <button class="producto-agregar">Agregar al carro</button>
+          </div>
+        </div>
+        <% }); %>
+      </div>
+    </main>
 
     <%- include('../partials/footer') %>
   </body>
