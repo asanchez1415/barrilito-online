@@ -29,7 +29,7 @@ Seguir la siguiente guía:
 También podemos instalar la aplicación de escritorio, para luego poder visualizar de manera sencilla
 las imágenes, contenedores, entre otros.
 
-![Aplicación Docker](./assets/Docker_app.png)
+![Aplicación Docker](./assets/images/DA_1.png)
 
 Para descargar la aplicación solo debemos buscar en el navegador "App desktop docker" y dentro del primer
 sitio saldrán opciones para cada sistema operativo. También puedes ir al siguiente link:
@@ -54,3 +54,29 @@ mismo contenedor, para cerrar el proceso solo es necesario usar `Ctrl + c` o `cm
 Luego podemos ejecutar el contenedor siempre que queramos desde la aplicación de escritorio.
 
 ### 4. Instalar MongoDB Compass
+
+Por último, debemos instalar un gestor de base de datos para conectarnos al MongoDB ya instalado, para esto la mejor opción
+es MongoDB Compass, para eso debemos ir al siguiente link:
+
+<https://www.mongodb.com/es/products/tools/compass>
+
+Descargamos el ejecutable para nuestro pc y lo instalamos, luego se verá algo así la aplicación:
+
+![MongoDB Compass inicio](./assets/images/MC_1.png)
+
+Ahora luego solo nos debemos conectar a la base de datos, ejecutando el contenedor docker de MongoDB:
+
+![Docker ejecutando el contenedor MongoDB](./assets/images/DA_2.png)
+
+Mientras se ejecuta, ya podemos conectarnos, para esto solo debemos hacer una "New connection" con la URI "mongodb://localhost:27017".
+
+### 5. Importar datos a la base de datos
+
+Deberas seguir los siguientes pasos para esta aplicación:
+
+- Para esta aplicación debemos crear la base de datos "barrilito-online"
+- Dentro de la BD, crear las colecciones "products" y "users".
+- Dentro de cada colección se debe importar el contenido, está en este proyecto en la ruta "./assets/DB".
+  Se puede copiar de la siguiente manera:
+
+  ![Insertar documentos en MongoDB Compass](./assets/images/MC_2.png)
