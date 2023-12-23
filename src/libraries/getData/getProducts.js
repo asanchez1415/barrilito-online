@@ -1,6 +1,6 @@
 import { Schema, connect, disconnect, model } from 'mongoose'
 
-export default async function getData() {
+export default async function getProducts() {
   connect('mongodb://localhost:27017/barrilito-online')
   const ProductSchema = new Schema({
     id: String,
